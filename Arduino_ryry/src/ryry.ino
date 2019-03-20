@@ -1,22 +1,23 @@
-#define OUT_PIN LED_BUILTIN
+#define OUT_PIN 10
 #define SYMBOL_TIME 20
 
 void setup()
 {
   pinMode(OUT_PIN, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void mark()
 {
-  digitalWrite(OUT_PIN, HIGH);
-  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(OUT_PIN, LOW);
+  digitalWrite(LED_BUILTIN, HIGH);
   delay(20);
 }
 
 void space()
 {
-  digitalWrite(OUT_PIN, LOW);
-  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(OUT_PIN, HIGH);
+  digitalWrite(LED_BUILTIN, LOW);
   delay(20);
 }
 
