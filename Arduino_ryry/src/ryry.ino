@@ -5,6 +5,7 @@ void setup()
 {
   pinMode(OUT_PIN, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
+  delay(5000);
 }
 
 void mark()
